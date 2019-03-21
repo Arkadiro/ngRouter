@@ -1,0 +1,21 @@
+<div>list of things</div>
+<app-page [page]="page"
+          [limit]="limit"
+          [pagesToShow]="pagesToShow"
+          (goNext)="onNext()"
+          (goPrev)="onPrev()"
+></app-page>
+<div style="width:100%">
+  <div class="items">
+    <div class="item" *ngFor="let post of sortedPosts">{{post.id}} {{post.title}}</div>
+  </div>
+</div>
+
+<!-- <app-pagination
+  (goPage)="goToPage($event)"
+  (goNext)="onNext()"
+  (goPrev)="onPrev()"
+  [pagesToShow]="3"
+  [page]="page"
+  [perPage]="limit"
+  [count]="total"></app-pagination> -->

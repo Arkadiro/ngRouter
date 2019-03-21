@@ -1,0 +1,9 @@
+.items {
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+}
+.item {
+  padding: 20px;
+  width: 70%
+}

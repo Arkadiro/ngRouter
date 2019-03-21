@@ -1,0 +1,5 @@
+<div>
+  <button class="link" (click)="onPrev()" [disabled]="page === 1 || loading" [ngClass]="{ 'disabled': page === 1 || loading }">&lt; Previous</button>
+  <button>{{page}} of {{pagesToShow}}</button>
+  <button class="link" (click)="onNext(true)" [disabled]="page >= pagesToShow">Next &gt;</button>
+</div>
